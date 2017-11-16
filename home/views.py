@@ -23,15 +23,14 @@ response_data['message'] = 'OK'
 # Create your views here.
 
 def index(request):
-	  context = {'ecommerce':''}
-   	return render(request, 'ecommerce/index.html', context)
+    context = {'ecommerce':'12'}
+    return render(request, 'ecommerce/index.html', context)
 
-def sigup(request):
-
-	  context = {'ecommerce':''}
-   	return render(request, 'ecommerce/sigup.html', context)
+def sigup(request):          
+    context = {'ecommerce':'12'}
+    return render(request, 'ecommerce/sigup.html', context)
 
 @csrf_exempt
 def update(request):
-	  context = {'questions': ""}
-   	return render(request, 'home/update.html', context)
+    context = {'questions': '123'}
+    return render(request, 'home/update.html', context)
